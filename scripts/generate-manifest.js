@@ -10,11 +10,11 @@ const base = `class @org.wikidata {
 }`;
 
 const q = `
-    list query NAME($PARAMS
+    list query $NAME($PARAMS
     )
     #_[canonical="$CANONICAL"]
     #_[confirmation="$CONFIRMATION"]
-    #_[doc="$DOC"];
+    #[doc="$DOC"];
 `;
 
 const param_with_examples = `
@@ -27,7 +27,7 @@ function generateQuery(name, params, canonical, confirmation, doc) {
     const param_list = [];
     for (let p of params)
         param_list.push(generateParam(p));
-    return q.replace('NAME', name)
+    return q.replace('$NAME', name)
             .replace('$PARAMS', param_list.join(','))
             .replace('$CANONICAL', canonical)
             .replace('$CONFIRMATION', confirmation)
@@ -39,7 +39,7 @@ function generateParam(p) {
         let param = param_with_examples.replace('$NAME', p.id).replace('$TYPE', p.type).replace('$CANONICAL', p.label);
         return param.replace('$STRING_VALUES', p.string_values);
     } else {
-        return param_without_examples.replace('NAME', p.id).replace('$TYPE', p.type).replace('$CANONICAL', p.label);
+        return param_without_examples.replace('$NAME', p.id).replace('$TYPE', p.type).replace('$CANONICAL', p.label);
     }
 }
 
