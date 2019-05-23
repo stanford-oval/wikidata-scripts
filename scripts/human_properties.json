@@ -1,0 +1,578 @@
+[
+  {
+    "id": "P735",
+    "label": "given name",
+    "type": "String",
+    "string_values": "org.wikidata:given_name"
+  },
+  {
+    "id": "P734",
+    "label": "family name",
+    "type": "String",
+    "string_values": "org.wikidata:family_name"
+  },
+  {
+    "id": "P1477",
+    "label": "birth name",
+    "type": "String",
+    "string_values": "org.wikidata:birth_name"
+  },
+  {
+    "id": "P1449",
+    "label": "nickname",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:nickname"
+  },
+  {
+    "id": "P21",
+    "label": "sex or gender",
+    "type": "Enum(male, female)"
+  },
+  {
+    "id": "P27",
+    "label": "country of citizenship",
+    "type": "String",
+    "string_values": "org.wikidata:country_of_citizenship"
+  },
+  {
+    "id": "P569",
+    "label": "date of birth",
+    "type": "Date"
+  },
+  {
+    "id": "P570",
+    "label": "date of death",
+    "type": "Date"
+  },
+  {
+    "id": "P19",
+    "label": "place of birth",
+    "type": "String",
+    "string_values": "org.wikidata:place_of_birth"
+  },
+  {
+    "id": "P20",
+    "label": "place of death",
+    "type": "String",
+    "string_values": "org.wikidata:place_of_death"
+  },
+  {
+    "id": "P1196",
+    "label": "manner of death",
+    "type": "String",
+    "string_values": "org.wikidata:manner_of_death"
+  },
+  {
+    "id": "P509",
+    "label": "cause of death",
+    "type": "String",
+    "string_values": "org.wikidata:cause_of_death"
+  },
+  {
+    "id": "P119",
+    "label": "place of burial",
+    "type": "String",
+    "string_values": "org.wikidata:place_of_burial"
+  },
+  {
+    "id": "P18",
+    "label": "image",
+    "type": "Picture"
+  },
+  {
+    "id": "P109",
+    "label": "signature",
+    "type": "Picture"
+  },
+  {
+    "id": "P22",
+    "label": "father",
+    "type": "Entity(org.wikidata:human)"
+  },
+  {
+    "id": "P25",
+    "label": "mother",
+    "type": "Entity(org.wikidata:human)"
+  },
+  {
+    "id": "P3373",
+    "label": "sibling",
+    "type": "Array(Entity(org.wikidata:human))"
+  },
+  {
+    "id": "P26",
+    "label": "spouse",
+    "type": "Array(Entity(org.wikidata:human))"
+  },
+  {
+    "id": "P40",
+    "label": "child",
+    "type": "Array(Entity(org.wikidata:human))"
+  },
+  {
+    "id": "P1971",
+    "label": "number of children",
+    "type": "Number"
+  },
+  {
+    "id": "P103",
+    "label": "native language",
+    "type": "String",
+    "string_values": "org.wikidata:native_language"
+  },
+  {
+    "id": "P106",
+    "label": "occupation",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:occupation"
+  },
+  {
+    "id": "P108",
+    "label": "employer",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:employer"
+  },
+  {
+    "id": "P39",
+    "label": "position held",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:position_held"
+  },
+  {
+    "id": "P31",
+    "label": "instance of",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:instance_of"
+  },
+  {
+    "id": "P166",
+    "label": "award received",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:award_received"
+  },
+  {
+    "id": "P1411",
+    "label": "nominated for",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:nominated_for"
+  },
+  {
+    "id": "P69",
+    "label": "educated at",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:educated_at"
+  },
+  {
+    "id": "P512",
+    "label": "academic degree",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:academic_degree"
+  },
+  {
+    "id": "P551",
+    "label": "residence",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:residence"
+  },
+  {
+    "id": "P937",
+    "label": "work location",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:work_location"
+  },
+  {
+    "id": "P102",
+    "label": "member of political party",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:member_of_political_party"
+  },
+  {
+    "id": "P1576",
+    "label": "lifestyle",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:lifestyle"
+  },
+  {
+    "id": "P172",
+    "label": "ethnic group",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:ethnic_group"
+  },
+  {
+    "id": "P140",
+    "label": "religion",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:religion"
+  },
+  {
+    "id": "P2048",
+    "label": "height",
+    "type": "Measure(m)"
+  },
+  {
+    "id": "P2067",
+    "label": "mass",
+    "type": "Measure(kg)"
+  },
+  {
+    "id": "P1853",
+    "label": "blood type",
+    "type": "Enum(A, B, AB, O)"
+  },
+  {
+    "id": "P1050",
+    "label": "medical condition",
+    "type": "String",
+    "string_values": "org.wikidata:medical_condition"
+  },
+  {
+    "id": "P1429",
+    "label": "has pet",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:has_pet"
+  },
+  {
+    "id": "P552",
+    "label": "handedness",
+    "type": "Enum(left, right)"
+  },
+  {
+    "id": "P410",
+    "label": "military rank",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:military_rank"
+  },
+  {
+    "id": "P856",
+    "label": "official website",
+    "type": "URL",
+    "string_values": "org.wikidata:official_website"
+  },
+  {
+    "id": "P737",
+    "label": "influenced by",
+    "type": "Array(Entity(org.wikidata:human))"
+  },
+  {
+    "id": "P641",
+    "label": "sport",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:sport"
+  },
+  {
+    "id": "P54",
+    "label": "member of sports team",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:member_of_sports_team"
+  },
+  {
+    "id": "P647",
+    "label": "drafted by",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:drafted_by"
+  },
+  {
+    "id": "P1618",
+    "label": "sport number",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:sport_number"
+  },
+  {
+    "id": "P286",
+    "label": "head coach",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:head_coach"
+  },
+  {
+    "id": "P1344",
+    "label": "participant of",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:participant_of"
+  },
+  {
+    "id": "P1830",
+    "label": "owner of",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:owner_of"
+  },
+  {
+    "id": "P3828",
+    "label": "wears",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:wears"
+  },
+  {
+    "id": "P136",
+    "label": "genre",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:genre"
+  },
+  {
+    "id": "P264",
+    "label": "record label",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:record_label"
+  },
+  {
+    "id": "P1303",
+    "label": "instrument",
+    "type": "Array(String)",
+    "string_values": "org.wikidata:instrument"
+  },
+  {
+    "id": "P184",
+    "label": "doctoral advisor",
+    "type": "Array(Entity(org.wikidata:human))"
+  },
+  {
+    "id": "P185",
+    "label": "doctoral student",
+    "type": "Array(Entity(org.wikidata:human))"
+  },
+  {
+    "id": "P214",
+    "label": "VIAF ID",
+    "type": "String",
+    "string_values": "org.wikidata:VIAF_ID"
+  },
+  {
+    "id": "P213",
+    "label": "ISNI",
+    "type": "String",
+    "string_values": "org.wikidata:ISNI"
+  },
+  {
+    "id": "P227",
+    "label": "GND ID",
+    "type": "String",
+    "string_values": "org.wikidata:GND_ID"
+  },
+  {
+    "id": "P2456",
+    "label": "DBLP ID",
+    "type": "String",
+    "string_values": "org.wikidata:DBLP_ID"
+  },
+  {
+    "id": "P864",
+    "label": "ACM Digital Library author ID",
+    "type": "String",
+    "string_values": "org.wikidata:ACM_Digital_Library_author_ID"
+  },
+  {
+    "id": "P2381",
+    "label": "Academic Tree ID",
+    "type": "String",
+    "string_values": "org.wikidata:Academic_Tree_ID"
+  },
+  {
+    "id": "P1153",
+    "label": "Scopus Author ID",
+    "type": "String",
+    "string_values": "org.wikidata:Scopus_Author_ID"
+  },
+  {
+    "id": "P549",
+    "label": "Mathematics Genealogy Project ID",
+    "type": "String",
+    "string_values": "org.wikidata:Mathematics_Genealogy_Project_ID"
+  },
+  {
+    "id": "P1006",
+    "label": "National Thesaurus for Author Names ID",
+    "type": "String",
+    "string_values": "org.wikidata:National_Thesaurus_for_Author_Names_ID"
+  },
+  {
+    "id": "P866",
+    "label": "Perlentaucher ID",
+    "type": "String",
+    "string_values": "org.wikidata:Perlentaucher_ID"
+  },
+  {
+    "id": "P1280",
+    "label": "CONOR ID",
+    "type": "String",
+    "string_values": "org.wikidata:CONOR_ID"
+  },
+  {
+    "id": "P244",
+    "label": "Library of Congress authority ID",
+    "type": "String",
+    "string_values": "org.wikidata:Library_of_Congress_authority_ID"
+  },
+  {
+    "id": "P268",
+    "label": "BnF ID",
+    "type": "String",
+    "string_values": "org.wikidata:BnF_ID"
+  },
+  {
+    "id": "P950",
+    "label": "BNE ID",
+    "type": "String",
+    "string_values": "org.wikidata:BNE_ID"
+  },
+  {
+    "id": "P269",
+    "label": "SUDOC authorities ID",
+    "type": "String",
+    "string_values": "org.wikidata:SUDOC_authorities_ID"
+  },
+  {
+    "id": "P345",
+    "label": "IMDb ID",
+    "type": "String",
+    "string_values": "org.wikidata:IMDb_ID"
+  },
+  {
+    "id": "P646",
+    "label": "Freebase ID",
+    "type": "String",
+    "string_values": "org.wikidata:Freebase_ID"
+  },
+  {
+    "id": "P349",
+    "label": "NDL Auth ID",
+    "type": "String",
+    "string_values": "org.wikidata:NDL_Auth_ID"
+  },
+  {
+    "id": "P2163",
+    "label": "FAST ID",
+    "type": "String",
+    "string_values": "org.wikidata:FAST_ID"
+  },
+  {
+    "id": "P1005",
+    "label": "PTBNP ID",
+    "type": "String",
+    "string_values": "org.wikidata:PTBNP_ID"
+  },
+  {
+    "id": "P2188",
+    "label": "BiblioNet author ID",
+    "type": "String",
+    "string_values": "org.wikidata:BiblioNet_author_ID"
+  },
+  {
+    "id": "P2002",
+    "label": "Twitter username",
+    "type": "String",
+    "string_values": "org.wikidata:Twitter_username"
+  },
+  {
+    "id": "P2003",
+    "label": "Instagram username",
+    "type": "String",
+    "string_values": "org.wikidata:Instagram_username"
+  },
+  {
+    "id": "P2013",
+    "label": "Facebook ID",
+    "type": "String",
+    "string_values": "org.wikidata:Facebook_ID"
+  },
+  {
+    "id": "P2847",
+    "label": "Google+ ID",
+    "type": "String",
+    "string_values": "org.wikidata:Google+_ID"
+  },
+  {
+    "id": "P3265",
+    "label": "Myspace ID",
+    "type": "String",
+    "string_values": "org.wikidata:Myspace_ID"
+  },
+  {
+    "id": "P2397",
+    "label": "YouTube channel ID",
+    "type": "String",
+    "string_values": "org.wikidata:YouTube_channel_ID"
+  },
+  {
+    "id": "P4265",
+    "label": "Reddit username",
+    "type": "String",
+    "string_values": "org.wikidata:Reddit_username"
+  },
+  {
+    "id": "P4411",
+    "label": "Quora username",
+    "type": "String",
+    "string_values": "org.wikidata:Quora_username"
+  },
+  {
+    "id": "P4013",
+    "label": "Giphy username",
+    "type": "String",
+    "string_values": "org.wikidata:Giphy_username"
+  },
+  {
+    "id": "P2611",
+    "label": "TED speaker ID",
+    "type": "String",
+    "string_values": "org.wikidata:TED_speaker_ID"
+  },
+  {
+    "id": "P2638",
+    "label": "TV.com ID",
+    "type": "String",
+    "string_values": "org.wikidata:TV.com_ID"
+  },
+  {
+    "id": "P1617",
+    "label": "BBC Things ID",
+    "type": "String",
+    "string_values": "org.wikidata:BBC_Things_ID"
+  },
+  {
+    "id": "P3984",
+    "label": "subreddit",
+    "type": "String",
+    "string_values": "org.wikidata:subreddit"
+  },
+  {
+    "id": "P3417",
+    "label": "Quora topic ID",
+    "type": "String",
+    "string_values": "org.wikidata:Quora_topic_ID"
+  },
+  {
+    "id": "P3221",
+    "label": "NYT topic ID",
+    "type": "String",
+    "string_values": "org.wikidata:NYT_topic_ID"
+  },
+  {
+    "id": "P2087",
+    "label": "Crunchbase person ID",
+    "type": "String",
+    "string_values": "org.wikidata:Crunchbase_person_ID"
+  },
+  {
+    "id": "P1902",
+    "label": "Spotify artist ID",
+    "type": "String",
+    "string_values": "org.wikidata:Spotify_artist_ID"
+  },
+  {
+    "id": "P4198",
+    "label": "Google Play Music artist ID",
+    "type": "String",
+    "string_values": "org.wikidata:Google_Play_Music_artist_ID"
+  },
+  {
+    "id": "P2850",
+    "label": "iTunes artist ID",
+    "type": "String",
+    "string_values": "org.wikidata:iTunes_artist_ID"
+  },
+  {
+    "id": "P6276",
+    "label": "Amazon Music artist ID",
+    "type": "String",
+    "string_values": "org.wikidata:Amazon_Music_artist_ID"
+  }
+]

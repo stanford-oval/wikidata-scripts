@@ -1,0 +1,12 @@
+*~
+node_modules/
+coverage/
+.nyc_output/
+.idea/
+
+*.tgz
+*.log
+
+workdir*
+
+string_values/
