@@ -36,10 +36,10 @@ function generateQuery(name, params, canonical, confirmation, doc) {
 
 function generateParam(p) {
     if (p.string_values) {
-        let param = param_with_examples.replace('$NAME', p.id).replace('$TYPE', p.type).replace('$CANONICAL', p.label);
+        let param = param_with_examples.replace('$NAME', p.id).replace('$TYPE', p.type).replace('$CANONICAL', p.label.toLowerCase());
         return param.replace('$STRING_VALUES', p.string_values);
     } else {
-        return param_without_examples.replace('$NAME', p.id).replace('$TYPE', p.type).replace('$CANONICAL', p.label);
+        return param_without_examples.replace('$NAME', p.id).replace('$TYPE', p.type).replace('$CANONICAL', p.label.toLowerCase());
     }
 }
 
