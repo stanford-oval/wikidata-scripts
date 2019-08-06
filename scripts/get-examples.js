@@ -5,7 +5,7 @@ const stream = require('stream');
 const csv = require('csv-parser');
 const argparse = require('argparse');
 const Dispatcher = require('../lib/sparql-dispatcher');
-const Retriever = require('../lib/label-retriever');
+const Retriever = require('../lib/retriever');
 
 const humanProperties = require('./human_properties.json');
 
@@ -54,7 +54,7 @@ function getExampleValues(property_id, limit, output) {
 
 function getLabel(property) {
     const retriever = new Retriever();
-    return retriever.retrieve(property);
+    return retriever.getPropertyLabel(property);
 }
 
 async function main() {

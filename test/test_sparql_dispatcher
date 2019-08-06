@@ -1,0 +1,41 @@
+"use strict";
+
+const assert = require('assert');
+const SPARQLQueryDispatcher = require('../lib/sparql-dispatcher');
+
+const TEST_CASES = [
+// labels for entities
+[`SELECT ?prop ?propLabel WHERE {
+    ?prop wdt:P641 wd:Q5372.
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+LIMIT 1
+`,
+'Jason Richardson'],
+
+// labels for properties
+[`SELECT DISTINCT ?label ?propLabel ?type ?typeLabel WHERE {
+     wd:Q1685 ?label ?type .
+     ?prop wikibase:directClaim ?label
+     SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+} limit 1
+`,
+'RealGM basketball player ID']
+];
+
+async function main() {
+    const dispatcher = new SPARQLQueryDispatcher();
+
+    for (let i = 0; i < TEST_CASES.length; i++) {
+        const [q, value] = TEST_CASES[i];
+        const response = await dispatcher.query(q);
+        const results = response['results']['bindings'];
+        results.forEach((res) => {
+            assert.strictEqual(res.propLabel.value, value);
+        });
+    }
+}
+
+module.exports = main;
+if (!module.parent)
+    main();

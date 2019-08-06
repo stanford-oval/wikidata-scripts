@@ -4,7 +4,7 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const stream = require('stream');
 
-const Retriever = require('../lib/label-retriever');
+const Retriever = require('../lib/retriever');
 
 function getProperties() {
     const retriever = new Retriever();
@@ -17,7 +17,7 @@ function getProperties() {
             async write (row, encoding, callback) {
                 const p = {};
                 p.id = row.id;
-                p.label = await retriever.retrieve(row.id);
+                p.label = await retriever.getPropertyLabel(row.id);
                 p.type = row.type;
                 if (['String', 'Array(String)', 'URL', 'Array(URL)'].includes(row.type)) {
                     p.string_values = `org.wikidata:${p.label.replace(/ /g, '_')}`

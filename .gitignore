@@ -10,3 +10,4 @@ coverage/
 workdir*
 
 string_values/
+data/
