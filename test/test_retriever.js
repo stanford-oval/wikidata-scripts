@@ -23,12 +23,24 @@ async function testGetPropertyLabel(retriever) {
     assert.strictEqual(label, 'instance of');
 }
 
+async function testGetFreebaseEquivalentItem(retriever) {
+    const id = await retriever.getFreebaseEquivalentItem('Q76');
+    assert.strictEqual(id, '/m/02mjmr');
+}
+
+async function testGetWikidataEquivalentItem(retriever) {
+    const id = await retriever.getWikidataEquivalentItem('/m/02mjmr');
+    assert.strictEqual(id, 'Q76');
+}
+
 async function main() {
     const retriever = new Retriever();
     testGetItemIdentifier(retriever);
     testGetPropertyIdentifier(retriever);
     testGetItemLabel(retriever);
     testGetPropertyLabel(retriever);
+    testGetFreebaseEquivalentItem(retriever);
+    testGetWikidataEquivalentItem(retriever);
 }
 
 module.exports = main;
