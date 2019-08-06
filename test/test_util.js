@@ -16,4 +16,6 @@ function main() {
     testIdToUri();
 }
 
-main();
+module.exports = main;
+if (!module.parent)
+    main();

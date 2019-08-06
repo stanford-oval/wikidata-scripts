@@ -28,9 +28,8 @@ async function split_dataset() {
         }))
         .on('data', (row) => {
         let hasField = false;
-        for (let f of fields) {
+        for (let f of fields)
             if (row.thingtalk.includes(f)) hasField = true;
-        }
         if (hasField) {
             if (coin(0.5))
                 evalset.write(`${row.id}\t${row.utterance}\t${row.thingtalk}\n`);

@@ -10,7 +10,7 @@ async function testGetItemIdentifier(retriever) {
 
 async function testGetPropertyIdentifier(retriever) {
     const id = await retriever.getPropertyIdentifier('instance of');
-    assert.strictEqual(id, 'P31')
+    assert.strictEqual(id, 'P31');
 }
 
 async function testGetItemLabel(retriever) {

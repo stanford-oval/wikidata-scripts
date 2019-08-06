@@ -11,6 +11,7 @@ async function seq(array) {
 }
 
 seq([
+    ('./test_util'),
     ('./test_sparql_dispatcher'),
     ('./test_retriever')
 ]);

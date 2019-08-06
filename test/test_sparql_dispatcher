@@ -6,21 +6,21 @@ const SPARQLQueryDispatcher = require('../lib/sparql-dispatcher');
 const TEST_CASES = [
 // labels for entities
 [`SELECT ?prop ?propLabel WHERE {
-    ?prop wdt:P641 wd:Q5372.
+    ?prop wdt:P646 "/m/02mjmr".
     SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 }
 LIMIT 1
 `,
-'Jason Richardson'],
+'Barack Obama'],
 
 // labels for properties
 [`SELECT DISTINCT ?label ?propLabel ?type ?typeLabel WHERE {
-     wd:Q1685 ?label ?type .
+     wd:Q76 ?label wd:Q5 .
      ?prop wikibase:directClaim ?label
      SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 } limit 1
 `,
-'RealGM basketball player ID']
+'instance of']
 ];
 
 async function main() {

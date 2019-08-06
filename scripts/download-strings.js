@@ -97,7 +97,7 @@ async function main() {
                     if (err)
                         console.log(err);
                     console.log(`${fname} saved.`);
-                })
+                });
             });
         }
     }

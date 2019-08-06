@@ -19,9 +19,8 @@ function getProperties() {
                 p.id = row.id;
                 p.label = await retriever.getPropertyLabel(row.id);
                 p.type = row.type;
-                if (['String', 'Array(String)', 'URL', 'Array(URL)'].includes(row.type)) {
-                    p.string_values = `org.wikidata:${p.label.replace(/ /g, '_')}`
-                }
+                if (['String', 'Array(String)', 'URL', 'Array(URL)'].includes(row.type))
+                    p.string_values = `org.wikidata:${p.label.replace(/ /g, '_')}`;
                 properties.push(p);
                 callback();
             },
