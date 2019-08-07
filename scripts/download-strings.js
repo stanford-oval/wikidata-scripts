@@ -7,7 +7,7 @@ const tough = require('tough-cookie');
 const minidom = require('../util/minidom');
 const assert = require('assert');
 
-const humanProperties = require('./human_properties.json');
+const humanProperties = require('../data/human_properties.json');
 
 function accumulateStream(stream) {
     return new Promise((resolve, reject) => {

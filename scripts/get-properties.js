@@ -9,7 +9,7 @@ const Retriever = require('../lib/retriever');
 function getProperties() {
     const retriever = new Retriever();
     const properties = [];
-    fs.createReadStream('./human_properties.csv')
+    fs.createReadStream('../data/human_properties.csv')
         .pipe(csv(['id', 'type']))
         .pipe(new stream.Writable({
             objectMode: true,

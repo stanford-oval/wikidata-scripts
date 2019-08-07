@@ -1,7 +1,7 @@
 "use strict";
 
 const fs = require('fs');
-const humanProperties = require('./human_properties.json');
+const humanProperties = require('../data/human_properties.json');
 
 const base = `class @org.wikidata {
     import loader from @org.thingpedia.v2();
@@ -73,7 +73,7 @@ function generateManifest(queries) {
 async function main() {
     const queries = [ await generateHumanQuery() ];
 
-    const wstream = fs.createWriteStream('./manifest.tt', { encoding: 'utf8' });
+    const wstream = fs.createWriteStream('../data/manifest.tt', { encoding: 'utf8' });
     await wstream.write(generateManifest(queries) + '\n');
     wstream.close();
 

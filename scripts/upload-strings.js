@@ -37,7 +37,7 @@ async function uploadOne(name, description, tsv) {
 }
 
 async function main() {
-    const human_params = require('./human_properties.json');
+    const human_params = require('../data/human_properties.json');
     for (let id in human_params) {
         if (human_params[id].string_values) {
             let label = human_params[id].label;

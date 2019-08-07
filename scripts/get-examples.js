@@ -7,7 +7,7 @@ const argparse = require('argparse');
 const Dispatcher = require('../lib/sparql-dispatcher');
 const Retriever = require('../lib/retriever');
 
-const humanProperties = require('./human_properties.json');
+const humanProperties = require('../data/human_properties.json');
 
 const q = `select distinct ?vLabel where {
   wd:$PERSON_ID wdt:$PROPERTY_ID ?v.
