@@ -6,7 +6,7 @@
     "argparse": "^1.0.10",
     "csv-parser": "^2.3.0",
     "form-data": "^2.3.3",
-    "node-fetch": "^2.5.0",
+    "node-fetch": "^2.6.1",
     "parse5": "^5.1.0",
     "thingpedia": "^2.3.4",
     "tough-cookie": "^3.0.1"
